@@ -2,16 +2,16 @@ package bank;
 
 public class Accounts {
   private int id;
-  private int accountId;
+  private double balance;
   private String accountType;
 
-  public Accounts(int id, int accountId, String accountType)
+  public Accounts(int id, Double balance, String accountType)
   {
     setId(id);
-    setAccountId(accountId);
+    setBalance(balance);
     setAccountType(accountType);
   }
-  
+
   public int getId() {
     return this.id;
   }
@@ -20,12 +20,12 @@ public class Accounts {
     this.id = id;
   }
 
-  public int getAccountId() {
-    return this.accountId;
+  public Double getBalance() {
+    return this.balance;
   }
 
-  public void setAccountId(int accountId) {
-    this.accountId = accountId;
+  public void setBalance(Double balance) {
+    this.balance = balance;
   }
 
   public String getAccountType() {
